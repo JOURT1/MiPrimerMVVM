@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiPrimerMVVM.Views.CambioDivisas"
+             xmlns:local="clr-namespace:MiPrimerMVVM.ViewModels"
+             Title="CambioDivisas">
+
+    <ContentPage.BindingContext>
+        <local:CambioDivisasViewModel/>
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout>
+        <Entry
+            x:Name="EntryDolares"
+            Placeholder="Ingrese el valor en dolares"
+            Text="{Binding ValorDolares}"/>
+
+        <Entry
+            x:Name="EntryEuros"
+            Placeholder="Ingrese el valor en Euros"
+            Text="{Binding ValorEuros}"/>
+    </VerticalStackLayout>
+</ContentPage>
