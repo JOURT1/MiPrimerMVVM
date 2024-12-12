@@ -17,7 +17,7 @@
 
         <Entry
             x:Name="EntryEuros"
-            Placeholder="Ingrese el valor en Euros"
+            Placeholder="Ingrese el valor en Euros."
             Text="{Binding ValorEuros}"/>
     </VerticalStackLayout>
 </ContentPage>
